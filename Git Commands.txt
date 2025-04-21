@@ -1,0 +1,38 @@
+Source : https://youtu.be/AT1uxOLsCdk?si=zEsxDSkidMsHeL-y
+1.) git init
+-> Initializes an empty git repository and a MASTER BRANCH
+2.) rmdir /s /q .git
+-> to delete .git repository
+where /s = delete all files and subdirectories.
+and   /q = quiet mode
+3.) git status
+-> shows on which branch we are alongwith TRACK/UNTRACK files and files commited or not.
+4.) git checkout -b branchname 
+-> used for switching to new branch
+5.) git checkout branchname
+-> to switch back to any existing branch from any-other branch
+6.) git add filename
+-> changes UNTRACK files to TRACK files before COMMITing to them i.e STAGE state.
+7.) git commit -m "Why I added the file ?"
+-> to COMMIT the TRACK files with a message on the branch.
+8.) git config --global user.name "Your Name"
+    git config --global user.email "you@example.com"
+-> to make git understand who you are
+9.) git config --list
+-> to check git identity
+10.)git config user.name "Your Name"
+    git config user.email "you@example.com"
+-> In case we don't want to change the global identity and just the repository identity
+11.)git restore filename
+-> to restore the TRACK file using git which we deleted from our folder/repository
+12.)git add .
+-> Will add all the files of the folder to a stage where COMMIT command is required to convert the files into 
+TRACK state.
+13.)git restore --staged filename
+-> Will bring added file back to UNTRACK state
+14.)git log
+-> shows the summary and timestamps and file updates
+15.)git revert COMMIT#
+-> this will revert the COMMIT# refer (git command.docx)
+16.)git branch 
+-> this will show the list of all branches and on which branch we are present will be highlighted.
